@@ -3,36 +3,146 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>8-Day Calisthenics Fitness Program</title>
+  <title>8-Day Hybrid Calisthenics Fitness Program</title>
   <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; font-family: Arial, sans-serif; }
-    body { background: #0f1117; color: #f5f5f5; padding: 16px; line-height: 1.5; }
-    header { text-align: center; margin-bottom: 16px; }
-    h1 { font-size: 1.55rem; margin-bottom: 5px; }
-    .subtitle { color: #b8b8b8; font-size: 0.9rem; }
-    .tabs { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; position: sticky; top: 0; z-index: 10; background: #0f1117; padding: 10px 0; margin-bottom: 12px; }
-    .tabs button { border: 1px solid #343a52; background: #1c2030; color: white; padding: 10px 4px; border-radius: 12px; font-weight: bold; cursor: pointer; }
-    .tabs button.active { background: #4f7cff; border-color: #4f7cff; }
-    .day { display: none; }
-    .day.active { display: block; }
-    .day-title { font-size: 1.25rem; margin: 14px 0; }
-    details { background: #181b27; border: 1px solid #2b3042; border-radius: 16px; margin-bottom: 12px; overflow: hidden; }
-    summary { background: #202536; padding: 14px; font-weight: bold; cursor: pointer; list-style: none; }
-    summary::-webkit-details-marker { display: none; }
-    .content { padding: 14px; }
-    .exercise { padding-bottom: 10px; margin-bottom: 10px; border-bottom: 1px solid #30364a; }
-    .exercise:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
-    .exercise-name { font-weight: bold; color: white; }
-    .sets { color: #bfc7ff; font-size: 0.95rem; margin-top: 3px; }
-    .cooldown { background: #111827; border: 1px solid #2d3748; border-radius: 16px; padding: 14px; margin: 16px 0 28px; }
-    .cooldown h3 { margin-bottom: 8px; }
-    .cooldown ul { padding-left: 20px; color: #d5d5d5; }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #0f1117;
+      color: #f5f5f5;
+      padding: 16px;
+      line-height: 1.5;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      font-size: 1.55rem;
+      margin-bottom: 5px;
+    }
+
+    .subtitle {
+      color: #b8b8b8;
+      font-size: 0.9rem;
+    }
+
+    .tabs {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 8px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: #0f1117;
+      padding: 10px 0;
+      margin-bottom: 12px;
+    }
+
+    .tabs button {
+      border: 1px solid #343a52;
+      background: #1c2030;
+      color: white;
+      padding: 10px 4px;
+      border-radius: 12px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .tabs button.active {
+      background: #4f7cff;
+      border-color: #4f7cff;
+    }
+
+    .day {
+      display: none;
+    }
+
+    .day.active {
+      display: block;
+    }
+
+    .day-title {
+      font-size: 1.25rem;
+      margin: 14px 0;
+    }
+
+    details {
+      background: #181b27;
+      border: 1px solid #2b3042;
+      border-radius: 16px;
+      margin-bottom: 12px;
+      overflow: hidden;
+    }
+
+    summary {
+      background: #202536;
+      padding: 14px;
+      font-weight: bold;
+      cursor: pointer;
+      list-style: none;
+    }
+
+    summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .content {
+      padding: 14px;
+    }
+
+    .exercise {
+      padding-bottom: 10px;
+      margin-bottom: 10px;
+      border-bottom: 1px solid #30364a;
+    }
+
+    .exercise:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .exercise-name {
+      font-weight: bold;
+      color: white;
+    }
+
+    .sets {
+      color: #bfc7ff;
+      font-size: 0.95rem;
+      margin-top: 3px;
+    }
+
+    .cooldown {
+      background: #111827;
+      border: 1px solid #2d3748;
+      border-radius: 16px;
+      padding: 14px;
+      margin: 16px 0 28px;
+    }
+
+    .cooldown h3 {
+      margin-bottom: 8px;
+    }
+
+    .cooldown ul {
+      padding-left: 20px;
+      color: #d5d5d5;
+    }
   </style>
 </head>
 <body>
   <header>
-    <h1>8-Day Calisthenics Fitness Program</h1>
-    <p class="subtitle">Calisthenics • لياقة / Fitness • Fat Loss Support</p>
+    <h1>8-Day Hybrid Calisthenics Fitness Program</h1>
+    <p class="subtitle">Calisthenics • Gym-Assisted • لياقة / Fitness Focus</p>
   </header>
 
   <nav class="tabs" id="tabs"></nav>
@@ -43,18 +153,18 @@
       {
         title: "DAY 1 — PUSH FOUNDATION",
         warmup: [
-          "Fast Walk / Light Jog — 10-15 min",
+          "Treadmill Incline Walk — 12-18 min",
           "Arm Circles — 30 sec each direction",
-          "Shoulder Taps — 2 x 10 each side",
-          "Incline Pushups — 2 x 8",
           "Band Pull-Aparts — 2 x 15",
-          "Bodyweight Squats — 2 x 12"
+          "Incline Pushups — 2 x 8-10",
+          "Scapular Pushups — 2 x 8",
+          "Light Assisted Dip Machine — 1 x 12"
         ],
         supersets: [
-          ["Chest + Triceps", ["Incline Pushups — 4 x 8-12", "Bench Dips — 4 x 8-12"]],
-          ["Chest + Shoulders", ["Knee Pushups / Regular Pushups — 4 x 8-12", "Pike Hold — 4 x 20-30 sec"]],
-          ["Shoulders + Core", ["Wall Shoulder Taps — 4 x 10 each side", "Dead Bug — 4 x 10 each side"]],
-          ["Fitness", ["Step-Ups — 4 x 10 each leg", "Fast Walk / Bike — 4 x 60 sec"]]
+          ["Chest + Triceps", ["Incline Pushups / Pushups — 4 x 8-12", "Assisted Dip Machine — 4 x 8-12"]],
+          ["Chest + Shoulders", ["Machine Chest Press — 4 x 10-12", "Pike Pushups / Pike Holds — 4 x 6-10 or 20-30 sec"]],
+          ["Triceps + Core", ["Rope Tricep Pushdowns — 4 x 12-15", "Dead Bug — 4 x 10 each side"]],
+          ["Fitness", ["Step-Ups — 4 x 10 each leg", "Bike Moderate Push — 4 x 60 sec"]]
         ],
         cooldown: [
           "Slow Walk — 5-8 min",
@@ -67,21 +177,21 @@
       {
         title: "DAY 2 — PULL FOUNDATION",
         warmup: [
-          "Bike / Elliptical — 10-15 min",
+          "Elliptical — 12-18 min",
           "Band Pull-Aparts — 2 x 15",
-          "Scapular Pullup Practice / Dead Hang — 2 x 10-20 sec",
-          "Arm Swings — 30 sec",
-          "Bodyweight Good Mornings — 2 x 12",
-          "Light Band Rows — 2 x 15"
+          "Dead Hang / Assisted Hang — 2 x 10-20 sec",
+          "Scapular Pullup Practice — 2 x 6-8",
+          "Light Lat Pulldown — 1 x 15",
+          "Light Seated Row — 1 x 15"
         ],
         supersets: [
-          ["Back + Biceps", ["Assisted Pullups / Negative Pullups — 4 x 4-8", "Band Curls — 4 x 12-15"]],
+          ["Back + Biceps", ["Assisted Pullups / Negative Pullups — 4 x 4-8", "Dumbbell Curls — 4 x 10-12"]],
           ["Back + Grip", ["Inverted Rows / TRX Rows — 4 x 8-12", "Dead Hangs — 4 x 15-30 sec"]],
-          ["Back + Rear Shoulders", ["Band Rows — 4 x 12-15", "Band Face Pulls — 4 x 12-15"]],
-          ["Core", ["Hanging Knee Raises / Captain's Chair Knee Raises — 4 x 8-12", "Plank — 4 x 25-40 sec"]]
+          ["Back + Biceps", ["Lat Pulldown — 4 x 10-12", "Hammer Curls — 4 x 10-12"]],
+          ["Core", ["Captain's Chair Knee Raises — 4 x 8-12", "Plank — 4 x 25-45 sec"]]
         ],
         cooldown: [
-          "Slow Walk — 5-8 min",
+          "Treadmill Walk — 5-8 min easy pace",
           "Lat Stretch — 45 sec each side",
           "Biceps Stretch — 30 sec each side",
           "Forearm Stretch — 30 sec each side",
@@ -91,18 +201,18 @@
       {
         title: "DAY 3 — LEGS AND CORE",
         warmup: [
-          "Treadmill Incline Walk — 10-15 min",
+          "Bike — 12-18 min",
           "Hip Circles — 30 sec each direction",
           "Ankle Circles — 30 sec each side",
           "Bodyweight Squats — 2 x 12",
           "Walking Lunges — 1 x 8 each leg",
-          "Glute Bridges — 2 x 12"
+          "Light Leg Press — 1 x 15"
         ],
         supersets: [
-          ["Upper Legs", ["Bodyweight Squats — 4 x 12-15", "Glute Bridges — 4 x 12-15"]],
-          ["Upper Legs", ["Step-Ups — 4 x 10 each leg", "Reverse Lunges — 4 x 8 each leg"]],
-          ["Lower Legs + Abs", ["Standing Calf Raises — 4 x 15-20", "Crunches — 4 x 12-15"]],
-          ["Core + Fitness", ["Plank — 4 x 30-45 sec", "Marching in Place / Bike — 4 x 60 sec"]]
+          ["Upper Legs", ["Bodyweight Squats / Goblet Squats — 4 x 12-15", "Leg Press — 4 x 12-15"]],
+          ["Upper Legs", ["Step-Ups — 4 x 10 each leg", "Seated / Lying Hamstring Curl — 4 x 10-15"]],
+          ["Lower Legs + Abs", ["Standing Calf Raise Machine — 4 x 15-20", "Cable Crunch — 4 x 12-15"]],
+          ["Core + Fitness", ["Plank — 4 x 30-45 sec", "Stairmaster / Incline Walk — 4 x 60 sec"]]
         ],
         cooldown: [
           "Easy Bike — 5-8 min",
@@ -116,18 +226,18 @@
       {
         title: "DAY 4 — LIGHT FULL BODY",
         warmup: [
-          "Fast Walk — 12-18 min",
+          "Fast Walk / Elliptical — 12-18 min",
           "Arm Circles — 30 sec each direction",
           "Band Pull-Aparts — 2 x 15",
           "Bodyweight Squats — 2 x 12",
           "Incline Pushups — 2 x 8",
-          "Dead Bug — 1 x 10 each side"
+          "Light Cable Row — 1 x 15"
         ],
         supersets: [
-          ["Push + Pull", ["Incline Pushups — 4 x 8-12", "Band Rows — 4 x 12-15"]],
+          ["Push + Pull", ["Incline Pushups — 4 x 8-12", "Seated Cable Row — 4 x 10-12"]],
           ["Legs + Core", ["Bodyweight Squats — 4 x 12-15", "Dead Bug — 4 x 10 each side"]],
-          ["Shoulders + Abs", ["Pike Pushups / Pike Holds — 4 x 6-10 or 20 sec", "Side Plank — 4 x 20-30 sec each side"]],
-          ["Fitness", ["Step-Ups — 4 x 10 each leg", "Fast Walk — 4 x 60 sec"]]
+          ["Shoulders + Back", ["Pike Pushups / Machine Shoulder Press — 4 x 8-12", "Cable Face Pulls — 4 x 12-15"]],
+          ["Fitness", ["Step-Ups — 4 x 10 each leg", "Treadmill Fast Walk — 4 x 60 sec"]]
         ],
         cooldown: [
           "Slow Walk — 5-8 min",
@@ -141,17 +251,17 @@
       {
         title: "DAY 5 — PUSH AND ABS",
         warmup: [
-          "Bike / Elliptical — 10-15 min",
+          "Bike / Elliptical — 12-18 min",
           "Shoulder Circles — 30 sec each direction",
           "Band Pull-Aparts — 2 x 15",
           "Incline Pushups — 2 x 8-10",
           "Wall Pushups — 1 x 15",
-          "Bodyweight Squats — 1 x 12"
+          "Light Machine Chest Press — 1 x 15"
         ],
         supersets: [
-          ["Chest + Triceps", ["Regular Pushups / Knee Pushups — 4 x 8-12", "Bench Dips — 4 x 8-12"]],
-          ["Chest + Shoulders", ["Incline Pushups Slow Tempo — 4 x 10-12", "Pike Pushups / Pike Holds — 4 x 6-10 or 20-30 sec"]],
-          ["Abs", ["Captain's Chair Knee Raises — 4 x 8-12", "Plank Shoulder Taps — 4 x 10 each side"]],
+          ["Chest + Triceps", ["Pushups / Knee Pushups — 4 x 8-12", "Bench Dips / Assisted Dips — 4 x 8-12"]],
+          ["Chest + Shoulders", ["Incline Machine Press — 4 x 10-12", "Pike Pushups / Pike Holds — 4 x 6-10 or 20-30 sec"]],
+          ["Abs + Triceps", ["Captain's Chair Knee Raises — 4 x 8-12", "Overhead Cable Tricep Extension — 4 x 12-15"]],
           ["Fitness", ["Mountain Climbers Slow-Controlled — 4 x 20 total", "Bike / Fast Walk — 4 x 60 sec"]]
         ],
         cooldown: [
@@ -165,18 +275,18 @@
       {
         title: "DAY 6 — PULL AND POSTURE",
         warmup: [
-          "Row Machine / Elliptical — 10-15 min",
+          "Row Machine / Elliptical — 12-18 min",
           "Band Pull-Aparts — 2 x 15",
           "Band Face Pulls — 2 x 12",
-          "Dead Hang — 2 x 10-20 sec",
-          "Light Band Rows — 2 x 15",
-          "Bodyweight Good Mornings — 1 x 12"
+          "Dead Hang / Assisted Hang — 2 x 10-20 sec",
+          "Light Lat Pulldown — 1 x 15",
+          "Light Cable Row — 1 x 15"
         ],
         supersets: [
-          ["Back + Biceps", ["Assisted Pullups / Negative Pullups — 4 x 4-8", "Band Curls — 4 x 12-15"]],
-          ["Back + Rear Delts", ["Inverted Rows / TRX Rows — 4 x 8-12", "Band Face Pulls — 4 x 12-15"]],
-          ["Grip + Core", ["Dead Hangs — 4 x 15-30 sec", "Hanging Knee Raises / Lying Knee Raises — 4 x 8-12"]],
-          ["Fitness", ["Farmer Walks / Treadmill Fast Walk — 4 x 30-60 sec", "Plank — 4 x 25-40 sec"]]
+          ["Back + Biceps", ["Assisted Pullups / Negative Pullups — 4 x 4-8", "EZ-Bar / Dumbbell Curls — 4 x 10-12"]],
+          ["Back + Rear Delts", ["Inverted Rows / TRX Rows — 4 x 8-12", "Cable Face Pulls — 4 x 12-15"]],
+          ["Back + Grip", ["Lat Pulldown — 4 x 10-12", "Farmer Carries — 4 x 25-35 sec"]],
+          ["Core", ["Hanging Knee Raises / Lying Knee Raises — 4 x 8-12", "Plank — 4 x 25-45 sec"]]
         ],
         cooldown: [
           "Bike — 5-8 min easy pace",
@@ -194,12 +304,12 @@
           "Knee Hugs — 1 x 10 each side",
           "Bodyweight Squats — 2 x 12",
           "Walking Lunges — 1 x 8 each leg",
-          "Standing Calf Raises — 1 x 20"
+          "Light Leg Extension — 1 x 15"
         ],
         supersets: [
-          ["Upper Legs", ["Goblet Squats / Bodyweight Squats — 4 x 10-15", "Reverse Lunges — 4 x 8 each leg"]],
-          ["Upper Legs", ["Step-Ups — 4 x 10 each leg", "Glute Bridges — 4 x 12-15"]],
-          ["Lower Legs + Abs", ["Standing Calf Raises — 4 x 15-20", "Dead Bug — 4 x 10 each side"]],
+          ["Upper Legs", ["Goblet Squats / Bodyweight Squats — 4 x 10-15", "Leg Extension Machine — 4 x 12-15"]],
+          ["Upper Legs", ["Step-Ups — 4 x 10 each leg", "Hamstring Curl Machine — 4 x 10-15"]],
+          ["Lower Legs + Abs", ["Seated Calf Raises — 4 x 15-20", "Cable Crunch — 4 x 12-15"]],
           ["Fitness", ["Stairmaster / Incline Walk — 4 x 60 sec", "Plank — 4 x 30-45 sec"]]
         ],
         cooldown: [
@@ -219,14 +329,14 @@
           "Band Pull-Aparts — 2 x 15",
           "Bodyweight Squats — 2 x 12",
           "Incline Pushups — 2 x 8-10",
-          "Dead Hang — 2 x 10-20 sec"
+          "Dead Hang / Assisted Hang — 2 x 10-20 sec"
         ],
         supersets: [
-          ["Push + Pull", ["Incline Pushups / Pushups — 4 x 8-12", "Assisted Pullups / Band Rows — 4 x 8-12"]],
+          ["Push + Pull", ["Incline Pushups / Pushups — 4 x 8-12", "Assisted Pullups / Lat Pulldown — 4 x 8-12"]],
           ["Legs + Core", ["Bodyweight Squats — 4 x 12-15", "Captain's Chair Knee Raises — 4 x 8-12"]],
-          ["Shoulders + Arms", ["Pike Pushups / Pike Holds — 4 x 6-10 or 20 sec", "Band Curls — 4 x 12-15"]],
+          ["Shoulders + Arms", ["Pike Pushups / Machine Shoulder Press — 4 x 8-12", "Dumbbell Curls — 4 x 10-12"]],
           ["Lower Legs + Abs", ["Standing Calf Raises — 4 x 15-20", "Side Plank — 4 x 20-30 sec each side"]],
-          ["Fitness Finish", ["Step-Ups — 4 x 10 each leg", "Fast Walk / Bike — 4 x 60 sec"]]
+          ["Fitness Finish", ["Step-Ups — 4 x 10 each leg", "Bike / Treadmill Push — 4 x 60 sec"]]
         ],
         cooldown: [
           "Slow Walk — 5-8 min",
