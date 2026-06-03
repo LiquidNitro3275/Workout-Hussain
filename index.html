@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>8-Day Gym Fitness Program</title>
+  <title>8-Day Gym Split Program</title>
   <style>
     * {
       box-sizing: border-box;
@@ -141,8 +141,8 @@
 </head>
 <body>
   <header>
-    <h1>8-Day Gym Fitness Program</h1>
-    <p class="subtitle">Full Body • Gym • لياقة / Fitness Focus</p>
+    <h1>8-Day Gym Split Program</h1>
+    <p class="subtitle">Gym • Bodybuilding Style • لياقة / Fitness Focus</p>
   </header>
 
   <nav class="tabs" id="tabs"></nav>
@@ -151,218 +151,198 @@
   <script>
     const workouts = [
       {
-        title: "DAY 1 — FULL BODY START",
+        title: "DAY 1 — CHEST + TRICEPS",
         warmup: [
-          "Treadmill Incline Walk — 15-20 min",
+          "Treadmill Incline Walk — 12-18 min",
           "Arm Circles — 30 sec each direction",
           "Band Pull-Aparts — 2 x 15",
-          "Bodyweight Squats — 2 x 12",
-          "Walking Lunges — 1 x 8 each leg",
+          "Incline Pushups — 2 x 8-10",
           "Light Machine Chest Press — 1 x 15",
-          "Light Lat Pulldown — 1 x 15"
+          "Light Rope Pushdown — 1 x 15"
         ],
         supersets: [
-          ["Back + Biceps", ["Lat Pulldown — 4 x 10-12", "Dumbbell Curls — 4 x 10-12"]],
           ["Chest + Triceps", ["Machine Chest Press — 4 x 10-12", "Rope Tricep Pushdown — 4 x 12-15"]],
-          ["Shoulders + Upper Legs", ["Dumbbell Shoulder Press — 4 x 10-12", "Leg Press — 4 x 12-15"]],
-          ["Lower Legs + Abs", ["Standing Calf Raise Machine — 4 x 15-20", "Cable Crunches — 4 x 12-15"]]
+          ["Chest + Triceps", ["Incline Dumbbell Press — 4 x 10-12", "Overhead Cable Tricep Extension — 4 x 12-15"]],
+          ["Chest + Triceps", ["Cable Chest Fly — 4 x 12-15", "Assisted Dip Machine / Bench Dips — 4 x 8-12"]],
+          ["Core + Fitness", ["Cable Crunch — 4 x 12-15", "Treadmill Fast Walk — 4 x 60 sec"]]
         ],
         cooldown: [
           "Bike — 5-8 min easy pace",
           "Chest Stretch — 45 sec each side",
-          "Lat Stretch — 45 sec each side",
-          "Quad Stretch — 45 sec each side",
-          "Hamstring Stretch — 45 sec each side",
+          "Triceps Stretch — 45 sec each side",
+          "Shoulder Stretch — 45 sec each side",
           "Deep Breathing — 1 min"
         ]
       },
       {
-        title: "DAY 2 — FITNESS BASE",
+        title: "DAY 2 — BACK + BICEPS",
         warmup: [
-          "Bike — 18-22 min",
+          "Elliptical — 12-18 min",
           "Shoulder Circles — 30 sec each direction",
-          "Hip Circles — 30 sec each direction",
-          "Bodyweight Good Mornings — 2 x 12",
-          "Incline Pushups — 2 x 8-10",
-          "Light Seated Row — 1 x 15",
-          "Light Leg Extension — 1 x 15"
+          "Band Pull-Aparts — 2 x 15",
+          "Scapular Pulldown Practice — 1 x 12 light",
+          "Light Lat Pulldown — 1 x 15",
+          "Light Dumbbell Curls — 1 x 15"
         ],
         supersets: [
+          ["Back + Biceps", ["Lat Pulldown — 4 x 10-12", "Dumbbell Curls — 4 x 10-12"]],
           ["Back + Biceps", ["Seated Cable Row — 4 x 10-12", "Hammer Curls — 4 x 10-12"]],
-          ["Chest + Triceps", ["Incline Dumbbell Press — 4 x 10-12", "Assisted Dip Machine / Bench Dips — 4 x 8-12"]],
-          ["Shoulders + Upper Legs", ["Machine Shoulder Press — 4 x 10-12", "Goblet Squat — 4 x 10-12"]],
-          ["Lower Legs + Abs", ["Seated Calf Raise — 4 x 15-20", "Captain's Chair Knee Raises — 4 x 10-15"]]
+          ["Back + Biceps", ["Chest-Supported Row Machine — 4 x 10-12", "EZ-Bar Curls — 4 x 10-12"]],
+          ["Core + Fitness", ["Captain's Chair Knee Raises — 4 x 10-15", "Farmer Walks — 4 x 25-35 sec"]]
         ],
         cooldown: [
-          "Treadmill Walk — 5-10 min easy pace",
-          "Shoulder Cross-Body Stretch — 45 sec each side",
-          "Hip Flexor Stretch — 45 sec each side",
-          "Calf Stretch — 45 sec each side",
-          "Seated Hamstring Stretch — 45 sec each side",
+          "Treadmill Walk — 5-8 min easy pace",
+          "Lat Stretch — 45 sec each side",
+          "Biceps Stretch — 30 sec each side",
+          "Forearm Stretch — 30 sec each side",
           "Breathing Reset — 1 min"
         ]
       },
       {
-        title: "DAY 3 — CARDIO AND STRENGTH",
+        title: "DAY 3 — LEGS + ABS",
         warmup: [
-          "Elliptical — 20-25 min",
-          "Band Pull-Aparts — 2 x 15",
-          "Scapular Pulldown Practice — 1 x 12 light",
-          "Pushups on Bench — 2 x 8",
-          "Bodyweight Squats — 2 x 12",
-          "Light Hamstring Curl — 1 x 15",
-          "Light Cable Face Pull — 1 x 15"
-        ],
-        supersets: [
-          ["Back + Biceps", ["Assisted Pullups / Lat Pulldown — 4 x 8-12", "EZ-Bar Curls — 4 x 10-12"]],
-          ["Chest + Triceps", ["Cable Chest Fly — 4 x 12-15", "Overhead Cable Tricep Extension — 4 x 12-15"]],
-          ["Shoulders + Upper Legs", ["Cable Lateral Raises — 4 x 12-15", "Lying Hamstring Curl — 4 x 10-15"]],
-          ["Lower Legs + Abs", ["Calf Press on Leg Press — 4 x 15-20", "Plank — 4 x 30-45 sec"]],
-          ["Full Body Fitness", ["Farmer Walks — 4 x 25-35 sec", "Step-Ups — 4 x 8 each leg"]]
-        ],
-        cooldown: [
-          "Bike — 6-8 min easy pace",
-          "Lat Stretch — 45 sec each side",
-          "Doorway Chest Stretch — 45 sec each side",
-          "Figure-4 Glute Stretch — 45 sec each side",
-          "Hamstring Stretch — 45 sec each side",
-          "Deep Breathing — 1 min"
-        ]
-      },
-      {
-        title: "DAY 4 — EASY CONDITIONING",
-        warmup: [
-          "Treadmill Walk/Jog Intervals — 20 min",
+          "Bike — 12-18 min",
+          "Hip Circles — 30 sec each direction",
           "Ankle Circles — 30 sec each side",
-          "Knee Hugs — 1 x 10 each side",
-          "Arm Swings — 30 sec",
-          "Wall Pushups — 2 x 12",
-          "Light Row Machine — 1 x 15",
+          "Bodyweight Squats — 2 x 12",
+          "Walking Lunges — 1 x 8 each leg",
           "Light Leg Press — 1 x 15"
         ],
         supersets: [
-          ["Back + Biceps", ["Chest-Supported Row Machine — 4 x 10-12", "Alternating Dumbbell Curls — 4 x 10-12"]],
-          ["Chest + Triceps", ["Machine Chest Press — 4 x 10-12", "Cable Tricep Pushdown — 4 x 12-15"]],
-          ["Shoulders + Upper Legs", ["Dumbbell Lateral Raises — 4 x 12-15", "Leg Extension Machine — 4 x 12-15"]],
-          ["Lower Legs + Abs", ["Standing Calf Raises — 4 x 15-20", "Dead Bug — 4 x 10 each side"]]
+          ["Upper Legs", ["Leg Press — 4 x 12-15", "Lying Hamstring Curl — 4 x 10-15"]],
+          ["Upper Legs", ["Goblet Squat — 4 x 10-12", "Leg Extension Machine — 4 x 12-15"]],
+          ["Lower Legs + Abs", ["Standing Calf Raise Machine — 4 x 15-20", "Cable Crunch — 4 x 12-15"]],
+          ["Abs + Fitness", ["Plank — 4 x 30-45 sec", "Treadmill Incline Walk — 4 x 60 sec"]]
         ],
         cooldown: [
-          "Elliptical — 5-8 min very easy",
-          "Chest Stretch — 45 sec each side",
+          "Bike — 5-8 min easy pace",
           "Quad Stretch — 45 sec each side",
+          "Hamstring Stretch — 45 sec each side",
           "Calf Stretch — 45 sec each side",
-          "Child's Pose — 60 sec",
-          "Breathing Reset — 1 min"
+          "Hip Flexor Stretch — 45 sec each side",
+          "Deep Breathing — 1 min"
         ]
       },
       {
-        title: "DAY 5 — STRENGTH BASICS",
+        title: "DAY 4 — SHOULDERS + ARMS",
         warmup: [
-          "Stairmaster — 10-15 min easy/moderate",
-          "Treadmill Walk — 5-10 min",
+          "Rowing Machine — 10-15 min easy/moderate",
+          "Arm Circles — 30 sec each direction",
           "Band Pull-Aparts — 2 x 15",
-          "Bodyweight Squats — 2 x 12",
-          "Incline Pushups — 2 x 8-10",
-          "Light Lat Pulldown — 1 x 15",
-          "Light Dumbbell Shoulder Press — 1 x 12"
+          "Light Cable Face Pull — 1 x 15",
+          "Light Dumbbell Shoulder Press — 1 x 12",
+          "Light Rope Pushdown — 1 x 15"
         ],
         supersets: [
-          ["Back + Biceps", ["Lat Pulldown — 4 x 8-12", "Reverse Curls — 4 x 10-12"]],
-          ["Chest + Triceps", ["Dumbbell Bench Press — 4 x 8-12", "Rope Pushdowns — 4 x 10-15"]],
-          ["Shoulders + Upper Legs", ["Machine Shoulder Press — 4 x 8-12", "Leg Press — 4 x 10-12"]],
-          ["Lower Legs + Abs", ["Seated Calf Raises — 4 x 15-20", "Machine Crunch / Cable Crunch — 4 x 12-15"]],
-          ["Posture + Core", ["Cable Face Pulls — 4 x 12-15", "Pallof Press — 4 x 10 each side"]]
+          ["Shoulders + Arms", ["Machine Shoulder Press — 4 x 10-12", "EZ-Bar Curls — 4 x 10-12"]],
+          ["Shoulders + Arms", ["Dumbbell Lateral Raises — 4 x 12-15", "Cable Tricep Pushdown — 4 x 12-15"]],
+          ["Shoulders + Arms", ["Rear Delt Machine Fly — 4 x 12-15", "Hammer Curls — 4 x 10-12"]],
+          ["Abs + Fitness", ["Russian Twists — 4 x 16-20 total", "Battle Ropes / Bike Sprint — 4 x 20 sec"]]
         ],
         cooldown: [
-          "Treadmill Walk — 6-10 min easy pace",
-          "Lat Stretch — 45 sec each side",
-          "Pec Stretch — 45 sec each side",
-          "Hip Flexor Stretch — 45 sec each side",
-          "Hamstring Stretch — 45 sec each side",
+          "Treadmill Walk — 5-8 min easy pace",
+          "Shoulder Cross-Body Stretch — 45 sec each side",
+          "Triceps Stretch — 45 sec each side",
+          "Biceps Stretch — 30 sec each side",
+          "Deep Breathing — 1 min"
+        ]
+      },
+      {
+        title: "DAY 5 — PUSH DAY",
+        warmup: [
+          "Treadmill Incline Walk — 15-20 min",
+          "Arm Swings — 30 sec",
+          "Band Pull-Aparts — 2 x 15",
+          "Incline Pushups — 2 x 10",
+          "Light Machine Shoulder Press — 1 x 15",
+          "Light Machine Chest Press — 1 x 15"
+        ],
+        supersets: [
+          ["Chest + Shoulders", ["Incline Machine Press — 4 x 10-12", "Dumbbell Shoulder Press — 4 x 10-12"]],
+          ["Chest + Triceps", ["Flat Dumbbell Press — 4 x 10-12", "Rope Pushdowns — 4 x 12-15"]],
+          ["Shoulders + Triceps", ["Cable Lateral Raises — 4 x 12-15", "Overhead Rope Extension — 4 x 12-15"]],
+          ["Abs + Fitness", ["Cable Crunch — 4 x 12-15", "Bike Moderate Push — 4 x 60 sec"]]
+        ],
+        cooldown: [
+          "Elliptical — 5-8 min easy pace",
+          "Chest Stretch — 45 sec each side",
+          "Shoulder Stretch — 45 sec each side",
+          "Triceps Stretch — 45 sec each side",
           "Controlled Breathing — 1 min"
         ]
       },
       {
-        title: "DAY 6 — FAT LOSS CIRCUIT",
-        warmup: [
-          "Rowing Machine — 12-15 min",
-          "Bike — 8-10 min",
-          "Arm Circles — 30 sec each direction",
-          "Hip Circles — 30 sec each direction",
-          "Bodyweight Squats — 2 x 12",
-          "Bench Pushups — 2 x 8-10",
-          "Light Cable Row — 1 x 15",
-          "Light Calf Raises — 1 x 20"
-        ],
-        supersets: [
-          ["Back + Biceps", ["Seated Cable Row — 4 x 10-12", "Dumbbell Hammer Curls — 4 x 10-12"]],
-          ["Chest + Triceps", ["Incline Machine Press — 4 x 10-12", "Assisted Dip Machine — 4 x 8-12"]],
-          ["Shoulders + Upper Legs", ["Cable Lateral Raises — 4 x 12-15", "Walking Lunges — 4 x 8 each leg"]],
-          ["Lower Legs + Abs", ["Calf Press Machine — 4 x 15-20", "Hanging Knee Raises / Captain's Chair — 4 x 10-15"]],
-          ["Conditioning Finisher", ["Sled Push / Battle Ropes — 4 x 20-30 sec", "Bodyweight Squats — 4 x 12"]]
-        ],
-        cooldown: [
-          "Bike — 5-8 min very easy",
-          "Shoulder Stretch — 45 sec each side",
-          "Quad Stretch — 45 sec each side",
-          "Hamstring Stretch — 45 sec each side",
-          "Calf Stretch — 45 sec each side",
-          "Deep Breathing — 1 min"
-        ]
-      },
-      {
-        title: "DAY 7 — UPPER BODY FITNESS",
+        title: "DAY 6 — PULL DAY",
         warmup: [
           "Elliptical — 15-20 min",
-          "Treadmill Incline Walk — 5-10 min",
+          "Shoulder Circles — 30 sec each direction",
           "Band Pull-Aparts — 2 x 15",
-          "Cable Face Pulls Light — 1 x 15",
-          "Incline Pushups — 2 x 10",
+          "Light Seated Row — 1 x 15",
           "Light Lat Pulldown — 1 x 15",
-          "Bodyweight Lunges — 1 x 8 each leg",
-          "Dead Bug — 1 x 10 each side"
+          "Light Hammer Curls — 1 x 15"
         ],
         supersets: [
-          ["Back + Biceps", ["Assisted Pullups / Neutral Lat Pulldown — 4 x 8-12", "EZ-Bar Curls — 4 x 10-12"]],
-          ["Chest + Triceps", ["Pushups / Machine Chest Press — 4 x 8-12", "Cable Tricep Pushdowns — 4 x 12-15"]],
-          ["Shoulders + Upper Legs", ["Dumbbell Shoulder Press — 4 x 10-12", "Goblet Squats — 4 x 10-12"]],
-          ["Lower Legs + Abs", ["Standing Calf Raises — 4 x 15-20", "Russian Twists — 4 x 16-20 total"]],
-          ["Posture Work", ["Rear Delt Machine Fly — 4 x 12-15", "Farmer Carries — 4 x 25-35 sec"]]
+          ["Back + Biceps", ["Assisted Pullups / Lat Pulldown — 4 x 8-12", "Dumbbell Curls — 4 x 10-12"]],
+          ["Back + Biceps", ["Seated Cable Row — 4 x 10-12", "Reverse Curls — 4 x 10-12"]],
+          ["Back + Rear Delts", ["Single-Arm Cable Row — 4 x 10 each side", "Cable Face Pulls — 4 x 12-15"]],
+          ["Abs + Grip", ["Hanging Knee Raises — 4 x 10-15", "Farmer Carries — 4 x 25-35 sec"]]
         ],
         cooldown: [
-          "Treadmill Walk — 5-8 min easy",
-          "Chest Stretch — 45 sec each side",
+          "Bike — 5-8 min easy pace",
           "Lat Stretch — 45 sec each side",
+          "Rear Delt Stretch — 45 sec each side",
           "Forearm Stretch — 30 sec each side",
-          "Hip Flexor Stretch — 45 sec each side",
           "Breathing Reset — 1 min"
         ]
       },
       {
-        title: "DAY 8 — FULL BODY RESET",
+        title: "DAY 7 — LEGS + CONDITIONING",
         warmup: [
-          "Bike or Treadmill — 20-30 min steady",
-          "Easy Row Machine — 3 min",
-          "Shoulder Circles — 30 sec each direction",
+          "Bike — 15-20 min",
+          "Hip Circles — 30 sec each direction",
+          "Knee Hugs — 1 x 10 each side",
           "Bodyweight Squats — 2 x 12",
-          "Wall Slides — 2 x 10",
-          "Light Seated Row — 1 x 15",
-          "Light Leg Press — 1 x 15"
+          "Walking Lunges — 1 x 8 each leg",
+          "Light Leg Extension — 1 x 15"
         ],
         supersets: [
-          ["Back + Biceps", ["Wide-Grip Lat Pulldown — 4 x 10-12", "Dumbbell Curls — 4 x 10-12"]],
-          ["Chest + Triceps", ["Incline Dumbbell Press — 4 x 10-12", "Overhead Rope Extension — 4 x 12-15"]],
-          ["Shoulders + Upper Legs", ["Machine Lateral Raise — 4 x 12-15", "Leg Press — 4 x 12-15"]],
-          ["Lower Legs + Abs", ["Seated Calf Raises — 4 x 15-20", "Cable Crunch — 4 x 12-15"]],
-          ["Core Stability", ["Pallof Press — 4 x 10 each side", "Plank — 4 x 30-45 sec"]]
+          ["Upper Legs", ["Leg Press — 4 x 10-15", "Seated Hamstring Curl — 4 x 10-15"]],
+          ["Upper Legs", ["Dumbbell Walking Lunges — 4 x 8 each leg", "Leg Extension Machine — 4 x 12-15"]],
+          ["Lower Legs + Abs", ["Seated Calf Raises — 4 x 15-20", "Machine Crunch — 4 x 12-15"]],
+          ["Conditioning", ["Sled Push / Stairmaster — 4 x 30-45 sec", "Plank — 4 x 30-45 sec"]]
         ],
         cooldown: [
-          "Elliptical — 5-10 min easy",
-          "Full Chest Stretch — 45 sec each side",
-          "Lat Stretch — 45 sec each side",
+          "Treadmill Walk — 5-10 min easy pace",
           "Quad Stretch — 45 sec each side",
           "Hamstring Stretch — 45 sec each side",
           "Calf Stretch — 45 sec each side",
+          "Figure-4 Glute Stretch — 45 sec each side",
+          "Deep Breathing — 1 min"
+        ]
+      },
+      {
+        title: "DAY 8 — MIXED UPPER BODY",
+        warmup: [
+          "Treadmill or Elliptical — 15-20 min",
+          "Arm Circles — 30 sec each direction",
+          "Band Pull-Aparts — 2 x 15",
+          "Incline Pushups — 2 x 8-10",
+          "Light Lat Pulldown — 1 x 15",
+          "Light Cable Face Pull — 1 x 15"
+        ],
+        supersets: [
+          ["Chest + Back", ["Machine Chest Press — 4 x 10-12", "Wide-Grip Lat Pulldown — 4 x 10-12"]],
+          ["Chest + Back", ["Incline Dumbbell Press — 4 x 10-12", "Chest-Supported Row Machine — 4 x 10-12"]],
+          ["Shoulders + Arms", ["Machine Lateral Raise — 4 x 12-15", "EZ-Bar Curls — 4 x 10-12"]],
+          ["Arms + Abs", ["Cable Tricep Pushdown — 4 x 12-15", "Cable Crunch — 4 x 12-15"]],
+          ["Fitness Finish", ["Bike Moderate Push — 4 x 60 sec", "Dead Bug — 4 x 10 each side"]]
+        ],
+        cooldown: [
+          "Elliptical — 5-8 min easy pace",
+          "Chest Stretch — 45 sec each side",
+          "Lat Stretch — 45 sec each side",
+          "Shoulder Stretch — 45 sec each side",
+          "Hamstring Stretch — 45 sec each side",
           "Deep Breathing — 1-2 min"
         ]
       }
